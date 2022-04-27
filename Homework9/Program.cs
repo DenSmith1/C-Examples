@@ -13,9 +13,9 @@ while (NumberDepth / 10 > 9)                    // определяем разр
     BitDepth++;
 }
 // думаю проще сделать через степень (Pow), но раз мы ее не проходили, то вот такое решение:
-int count = 1;
+int count = 0;
 int Depth = 1;
-while (count < BitDepth - 1)
+while (count < BitDepth - 2)
 {
     Depth = Depth * 10;                         // глубина разрядности для расчета 3 цифры
     count++;
